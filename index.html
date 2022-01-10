@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author"
+    content="Andrea Cisnero, Facundo Moya, Esteban Márquez, Facundo Elías, Luz Mariam Diaz, Emmanuel Gonzalez " />
+  <meta name="description" content="proyecto Orbita" />
+  <meta name="keywords" content="proyecto orbita,NASA,espacio,universo" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/logo2.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Proyecto Orbita</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active efecto-link  text-uppercase font-weight-bold text-warning">Inicio</a>
+        <a href="entrada-blog.html" class="efecto-link text-uppercase font-weight-bold text-warning">Entrada del
+          blog</a>
+        <a href="galeria-imagenes.html" class="efecto-link text-uppercase font-weight-bold text-warning">Galería
+          de imágenes</a>
+          <a href="contacto.html" class="efecto-link text-uppercase font-weight-bold text-warning">Contacto</a>
+          <a href="acerca-de-nosotros.html" class="efecto-link text-uppercase font-weight-bold text-warning">Acerca de
+            nosotros</a>
+        <div class="loginsusc">
+          <a href="login.html" class="efecto-link text-uppercase font-weight-bold text-warning">Login</a>
+        </div>
+        <div class="loginsusc">
+          <a id="myBtn" class="efecto-link">SUSCRIPCIÓN</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+          <div id="myModal" class="modal center">
+            <div class="modal-content1">
+              <div class="modal-header">
+                <h2>¡Suscribite a nuestro blog!</h2>
+                <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">X</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre">Correo electrónico <span class="text-danger">*</span></label>
+                    <input class="form-control" id="nombre" type="email" placeholder="facuelias@gmail.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <div class="mb-3">
+                      <label class="form-label" for="nombre">Contraseña<span class="text-danger">*</span></label>
+                      <input class="form-control" id="nombre" type="password"  required>
+                    </div>
+                  </div>
+                  <div id="enviar1">
+                  <button class="btn btn-primary mt-3">Enviar</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </nav>
+    <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carrusel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/imagen1_slider.jpg"
+            class="d-block w-100 slider-responsive slider-responsivem"
+            alt="imagen del planeta Tierra"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/imagen2_slider.jpg"
+            class="d-block w-100 slider-responsive slider-responsivem"
+            alt="imagen de una galaxia"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/imagen3_slider.jpg"
+            class="d-block w-100 slider-responsive slider-responsivem"
+            alt="imagen del planeta Tierra junto con un satélite"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carrusel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carrusel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+    <article class="d-flex orden">
+      <div class="d-flex bd-highlight mx-2 my-5 orden orden2">
+        <div class="card mx-1 shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
+          <img src="img/imagen1_card.jpeg" class="card-img-top" alt="imagen explosión rayos gamma" />
+          <div class="card-body">
+            <h5 class="card-title">
+              Analizan el 'récord' de una explosión de rayos gamma
+            </h5>
+            <p class="card-text">
+              El Instituto de Astrofísica de Andalucía (IAA) del Consejo
+              Superior de Investigaciones Científicas (CSIC) participa en dos
+              artículos que difunden el hallazgo de la explosión de rayos
+              gamma más breve producida por la muerte de una estrella masiva.
+              Según informó este lunes el centro de investigación, el 26 de
+              agosto de 2020, el telescopio espacial Fermi de la NASA detectó
+              un pulso de radiación de alta energía que, con una...
+            </p>
+            <a href="https://www.20minutos.es/noticia/4776650/0/analizan-la-explosion-de-rayos-gamma-mas-breve-producida-por-la-muerte-de-una-estrella/"
+              target="blank" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+        <div class="card mx-1 shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
+          <img src="img/imagen2_card.png" class="card-img-top" alt="imagen del Perseverance en Marte" />
+          <div class="card-body">
+            <h5 class="card-title">La NASA sigue avanzando en Marte</h5>
+            <p class="card-text">
+              Desde que el rover Perseverance de la NASA llegó a Marte en
+              febrero, el número de misiones no ha parado de crecer en los
+              últimos meses, desde ser el compañero del helicóptero Ingenuity
+              hasta llevar a cabo su última tarea científica que consiste en
+              recolectar una muestra de roca y guardarla en un contenedor.El
+              vehículo está equipado con tubos que se pueden llenar de rocas
+              para que los recoja en futuras misiones, aunque  la idea es que se lleven a la Tierra para que se puedan analizar...
+            </p>
+            <a href="https://www.20minutos.es/tecnologia/actualidad/la-nasa-sigue-avanzando-el-perseverance-se-prepara-para-recoger-las-primeras-muestras-de-rocas-en-marte-4773222/"
+              target="blank" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+        <div class="card mx-1 shadow p-3 mb-5 bg-body rounded" style="width: 18rem">
+          <img src="img/imagen3_card.jpeg" class="card-img-top"
+            alt="imagen del telecospio Hubble y del planeta Tierra" />
+          <div class="card-body">
+            <h5 class="card-title">
+              El telescopio espacial Hubble vuelve a funcionar después de
+              estar más de un mes inactivo
+            </h5>
+            <p class="card-text">
+              El telescopio espacial Hubble parecía haber llegado a su fin el
+              mes pasado. Desde el 13 de junio había permanecido inactivo por
+              un fallo en un ordenador interno de 1974 y, hasta ahora, los
+              intentos de la NASA de arreglarlo habían fracasado. No obstante,
+              este fin de semana la agencia espacial estadounidense ha
+              anunciado que Hubble vuelve a funcionar...
+            </p>
+            <a href="https://www.20minutos.es/tecnologia/actualidad/el-telescopio-espacial-hubble-vuelve-a-funcionar-despues-de-estar-mas-de-un-mes-inactivo-4769746/"
+              target="blank" class="btn btn-primary">Ver más</a>
+          </div>
+          <nav aria-label="paginación de entradas" class="d-flex justify-content-center ordenpag" id="positionpag">
+            <ul class="pagination pagination-lg">
+              <li class="page-item"><a class="page-link" href="error404.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="error404.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="error404.html">3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="mx-5 my-5 org">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" maxlength="20" />
+          <button class="btn btn-outline-primary" type="submit">
+            Buscar
+          </button>
+        </form>
+        <div class="lista de grupos my-3">
+          <a href="https://ciencia.nasa.gov/" class="list-group-item list-group-item-action" aria-current="true"
+            target="blank">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 display-6 tipodeletra1">Articulos</h5>
+            </div>
+            <p class="mb-1 tipodeletra1">
+              Los ultimos artículos publicados por la NASA actualizados y en
+              español.
+            </p>
+            <small class="text-muted">Ultima actualización: Hace cuatro días</small>
+          </a>
+          <a href="https://www.lanasa.net/noticias" class="list-group-item list-group-item-action" target="blank">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 display-6 tipodeletra1">Noticias</h5>
+            </div>
+            <p class="mb-1 tipodeletra1">
+              Las últimas noticias e información de proyecto Orbita.
+            </p>
+            <small class="text-muted">Ultima actualización: Hace seis días</small>
+          </a>
+          <a href="error404.html" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 display-6 tipodeletra1">Información</h5>
+            </div>
+            <p class="mb-1 tipodeletra1">
+              Encontrarás toda la información sobre nuestro proyecto.
+            </p>
+            <small class="text-muted">Ultima actualización: Hace dos días</small>
+          </a>
+        </div>
+        <div class="ocultar-publicidad">
+          <p class="
+              my-5
+              px-3
+              py-5
+              border border-primary
+              text-muted
+              d-flex
+              justify-content-center
+            ">
+            PUBLICIDAD
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="bg-dark text-white pt-3 pb-3">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Logo de orbita</h5>
+          <div>
+            <img src="/img/logo2.png" alt="logo orbita" height="100px" width="100px">
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">descripcion</h5>
+          <p>Una mirada al cielo lejos de la ciudad</p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactos</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> corresponde direccion de orbita
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> orbita@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +123456789
+          </p>
+          <p>
+            <i class="fas fa-print mr-3"></i> +123456789
+          </p>
+        </div>
+      </div>
+      <hr class="mb-3">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p> Copyright ©2021 todos los derechos reservados:
+            <a href="error404.html" id="copyright">
+              <strong class="text-warning">orbita</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white footer-fuente"><i
+                    class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                    class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                    class="fab fa-google-plus"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                    class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                    class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author"
+    content="Andrea Cisnero, Facundo Moya, Esteban Márquez, Facundo Elías, Luz Mariam Diaz, Emmanuel Gonzalez " />
+  <meta name="description" content="proyecto Orbita" />
+  <meta name="keywords" content="proyecto orbita,NASA,espacio,universo" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/logo2.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Proyecto Orbita</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active efecto-link  text-uppercase font-weight-bold text-warning">Inicio</a>
+        <a href="entrada-blog.html" class="efecto-link text-uppercase font-weight-bold text-warning">Entrada del
+          blog</a>
+        <a href="galeria-imagenes.html" class="efecto-link text-uppercase font-weight-bold text-warning">Galería
+          de imágenes</a>
+          <a href="contacto.html" class="efecto-link text-uppercase font-weight-bold text-warning">Contacto</a>
+          <a href="acerca-de-nosotros.html" class="efecto-link text-uppercase font-weight-bold text-warning">Acerca de
+            nosotros</a>
+        <div class="loginsusc">
+          <a href="login.html" class="efecto-link text-uppercase font-weight-bold text-warning">Login</a>
+        </div>
+        <div class="loginsusc">
+          <a id="myBtn" class="efecto-link">SUSCRIPCIÓN</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+          <div id="myModal" class="modal center">
+            <div class="modal-content1">
+              <div class="modal-header">
+                <h2>¡Suscribite a nuestro blog!</h2>
+                <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">X</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre">Correo electrónico <span class="text-danger">*</span></label>
+                    <input class="form-control" id="nombre" type="email" placeholder="facuelias@gmail.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <div class="mb-3">
+                      <label class="form-label" for="nombre">Contraseña<span class="text-danger">*</span></label>
+                      <input class="form-control" id="nombre" type="password"  required>
+                    </div>
+                  </div>
+                  <div id="enviar1">
+                  <button class="btn btn-primary mt-3">Enviar</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </nav>
+  </header>
+  <section class="imagen d-flex justify-content-center align-content-center">
+    <img src="img/astronauta-con-globos.jpg" class="img-fluid w-50" alt="astronauta globos">
+  </section>
+  <main class="letra">
+    <div class="container">
+      <H1 class="display-4 text-center text-light py-2 titulo"> Acerca de nosotros</H1>
+      <hr>
+      <p class="lead py-2 text-center">Una mirada al cielo lejos de la ciudad, miles de estrellas, un frío
+        placentero, una lluvia de meteoros y esa sensación de estar solo en el universo. El blog pretende ser
+        un pequeño diario de nuestra experiencia como aficionados a la astronomía, con la intención de despertar
+        el interés por la ciencia entre el público que está menos familiarizado con ella, pero siempre de una
+        forma
+        amena y sencilla. Sean bienvenidos a nuestro espacio Órbita, está formado por personas con distintos
+        perfiles
+        pero con una pasión en común: la astronomía. Disfruten del cielo y espero que les ayude
+        a tener la misma pasión que tenemos nosotros por OBSERVAR EL UNIVERSO. Gracias por tu visita y espero
+        que te diviertas.-</p>
+      <hr>
+      <h3 class="display-4 text-center text-warning bg-dark m-5 py-1 ">Autores</h3>
+    </div>
+    <section class="row justify-content-around text-center mt-0 pt-0 w-100">
+      <div class="col-sm-12 col-md-4 col-lg-4 mt-2 pt-2">
+        <img src="img/Esteban Marquez.jpeg" alt="foto" class="img-thumbnail border bg-dark" width="230" height="160" />
+        <p>Esteban Marquez</p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 mt-2 pt-2">
+        <img src="img/Luz Diaz.jpg" alt=foto class="img-thumbnail border bg-dark" width="240" height="160" />
+        <p>Luz Díaz</p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 mt-2 pt-2">
+        <img src="img/Facundo Elias.jpg" alt=foto class="img-thumbnail border bg-dark" width="230" height="160" />
+        <p>Facundo Elías</p>
+      </div>
+    </section>
+    <section class="row justify-content-around text-center mt-0 pt-0 w-100">
+      <div class="col-sm-12 col-md-4 col-lg-4 mt-2 pt-2">
+        <img src="img/Facundo Moya.jpg" alt=foto class="img-thumbnail border bg-dark" width="240" height="160" />
+        <p>Facundo Moya</p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 mt-2 pt-2">
+        <img src="img/Andrea Cisnero.jpg" alt=foto class="img-thumbnail border bg-dark" width="240" height="160" />
+        <p>Andrea Cisnero</p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 mt-2 pt-2">
+        <img src="img/Emmanuel Gonzalez.jpg" alt=foto class="img-thumbnail border bg-dark" width="200" height="200" />
+        <p>Emmanuel Gónzalez</p>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-white pt-3 pb-3">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Logo de orbita</h5>
+          <div>
+            <img src="/img/logo2.png" alt="logo orbita" height="100px" width="100px">
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">descripcion</h5>
+          <p>Una mirada al cielo lejos de la ciudad</p>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactos</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i> corresponde direccion de orbita
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> orbita@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +123456789
+          </p>
+          <p>
+            <i class="fas fa-print mr-3"></i> +123456789
+          </p>
+        </div>
+      </div>
+      <hr class="mb-3">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p> Copyright ©2021 todos los derechos reservados:
+            <a href="error404.html" id="copyright">
+              <strong class="text-warning">orbita</strong>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white footer-fuente"><i
+                    class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i class="fab fa-google-plus"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="error404.html" class="btn-floating btn-sm text-white"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

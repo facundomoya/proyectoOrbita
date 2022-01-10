@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;  
+}
+
+/* estilo nav */
+.topnav {
+  background: rgba(21, 21, 21, 0.8);
+  overflow: hidden;  
+  
+}
+
+nav{
+position: fixed;
+z-index: 3;
+width: 100%;
+} 
+
+/* estilo links */
+.topnav a {
+  float: left;
+  display: block;
+  justify-content: space-around;
+  color: #fed100;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  font-style: "Noto JP", sans serif;
+}
+
+/* suscripción y login */
+
+.loginsusc {
+  float: right;
+  display: block;
+  font-style: "Noto JP", sans serif;
+}
+
+/* color hover */
+.topnav a:hover {
+  color: #fed100;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* responsive navbar */
+
+@media screen and (max-width: 1018px) {
+  .topnav a {
+    display: none;
+  }
+
+  .loginsusc{
+    display: none;
+    font-size: 10px;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1018px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .loginsusc{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  #myBtn{
+    float: none;
+  }
+}
+
+/* estilo botón suscripción */
+
+#suscrip {
+  color: #fed100;
+}
+
+#suscrip:hover {
+  cursor: pointer;
+  color: #fed100;
+}
+
+/* margen "novedades" ventana modal */
+#novedades {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+label{
+  margin: 3px 0px;
+}
+
+/* efecto links navbar */
+
+.efecto-link {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.efecto-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+}
+
+.efecto-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.parrafo iframe{
+  float: left;
+  margin: 15px;
+  }
+  h1, h3, p{
+  font-family: 'Noto Serif', serif;
+  }
+
+ footer{
+  background: linear-gradient(to right, #434343 0%, black 100%);
+ }
+
+ footer a{
+   text-decoration: none;
+ }
+
+.letratype{
+    font-family: "Noto Serif JP", sans-serif;
+}
+
+/* Pagina Contacto */
+
+#color{
+    background: rgb(15, 15, 15);
+}
+
+/* Pagina de logeo */
+
+#logologin{
+    width: 95px;
+}
+
+#logoface{
+    width: 32px;
+}
+
+#logogoogle{
+    width: 32px;
+}
+
+#imglogin{
+    width: 500px;
+}
+
+/* ERROR 404 */
+#colorb {
+  background: rgba(245, 245, 245, 0.994);
+}
+
+.letra {
+  font-family: "Noto ,JP", sans-serif;
+  background: rgb(10, 10, 10);
+  color: whitesmoke;
+}
+
+/* SOBRE NOSOTROS */
+.imagen {
+  background-color: #000;
+}
+
+.border {
+  border-radius: 35px !important;
+  margin: 15px 5px;
+  padding: 15px 5px;
+}
+
+.titulo {
+  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+}
+/* selector id */
+
+#positionpag {
+  position: relative;
+  top: 25px;
+}
+
+/* selector de clase */
+
+.tipodeletra1 {
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+.linea {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+/* media queries pagina de inicio*/
+
+/* dispositivos small */
+
+@media all and (max-width: 575px) {
+  .slider-responsive {
+    height: 200px;
+    object-fit: cover; 
+  }
+
+  .orden{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .org{
+    position: relative;
+    bottom: 80px;
+    right: 32px;
+  }
+
+  .ocultar-publicidad{
+    display:none;
+}
+}
+
+/* dispositivos medium and large */
+
+@media all and (max-width: 1025px)
+{
+  .slider-responsivem{
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .orden2{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+main{
+  background: rgb(15, 15, 15);
+}
+
+.footer-fuente{
+  font-size: 28px;
+}
+
+.copyright{
+  text-decoration: none;
+}
+
+/* paginacion pagina principal */
+
+.ordenpag{
+  z-index: 1;
+}
+
+
+ /* modal */
+
+.modal {
+  display: none; 
+  position: fixed;
+  padding-top: 100px;
+  z-index: 3; 
+  left: 0;
+  top: 0;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+/* Modal Content */
+.modal-content1 {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 60% !important ;
+  }
+
+  #myBtn:hover {
+    cursor: pointer;
+    color: #fed100;
+  }
+  
+  /* Media queries entrada del blog */
+
+  @media all and (max-width:576px){
+
+    .posicionado{
+      position: relative;
+      right: 45px;
+    }
+  }
+
+  .parrafoiframe{
+  float: left;
+  margin: 20px 10px;
+
+  }

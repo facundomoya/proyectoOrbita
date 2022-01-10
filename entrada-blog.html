@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author"
+    content="Andrea Cisnero, Facundo Moya, Esteban Márquez, Facundo Elías, Luz Mariam Diaz, Emmanuel Gonzalez " />
+  <meta name="description" content="proyecto Orbita" />
+  <meta name="keywords" content="proyecto orbita,NASA,espacio,universo" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/logo2.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  <title>Proyecto Orbita</title>
+</head>
+  <body>
+    <header>
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active efecto-link  text-uppercase font-weight-bold text-warning">Inicio</a>
+          <a href="entrada-blog.html" class="efecto-link text-uppercase font-weight-bold text-warning">Entrada del
+            blog</a>
+          <a href="galeria-imagenes.html" class="efecto-link text-uppercase font-weight-bold text-warning">Galería
+            de imágenes</a>
+            <a href="contacto.html" class="efecto-link text-uppercase font-weight-bold text-warning">Contacto</a>
+            <a href="acerca-de-nosotros.html" class="efecto-link text-uppercase font-weight-bold text-warning">Acerca de
+              nosotros</a>
+            </a>
+          <div class="loginsusc">
+            <a href="login.html" class="efecto-link text-uppercase font-weight-bold text-warning">Login</a>
+          </div>
+          <div class="loginsusc">
+            <a id="myBtn" class="efecto-link">SUSCRIPCIÓN</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div id="myModal" class="modal center">
+            <div class="modal-content1">
+              <div class="modal-header">
+                <h2>¡Suscribite a nuestro blog!</h2>
+                <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">X</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre">Correo electrónico <span class="text-danger">*</span></label>
+                    <input class="form-control" id="nombre" type="email" placeholder="facuelias@gmail.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <div class="mb-3">
+                      <label class="form-label" for="nombre">Contraseña<span class="text-danger">*</span></label>
+                      <input class="form-control" id="nombre" type="password"  required>
+                    </div>
+                  </div>
+                  <div id="enviar1">
+                  <button class="btn btn-primary mt-3">Enviar</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+      </nav>
+    </header>
+    <main class="bg-dark">
+      <div
+        id="carouselOtrasEntradas"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselOtrasEntradas"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselOtrasEntradas"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselOtrasEntradas"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/estrellasfugaces.jpg"
+              class="d-block w-100"
+              alt="estrellas fugaces"
+            />
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Guía para ver Estrellas Fugaces</h5>
+              <p>
+                Llegan las Perseidas, la lluvia de meteoros comúnmente llamados
+                “estrellas fugaces” que sucede todos los años hacia el mediados
+                de agosto.
+              </p>
+              <a href="/error404.html" class="btn btn-secondary active" aria-current="page">Leer Más</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/eclipse.jpg"
+              class="d-block w-100"
+              alt="eclipse solar"
+            />
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Cómo observar un eclipse solar</h5>
+              <p>
+                En este artículo aprenderemos a fabricar nuestro propio
+                proyector solar para observar el eclipse de manera segura.
+              </p>
+              <a href="/error404.html" class="btn btn-secondary active" aria-current="page">Leer Más</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/Telescopio-astronomico.jpg"
+              class="d-block w-100"
+              alt="telescopio astronómico"
+            />
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Cómo elegir un telescopio</h5>
+              <p>
+                En este artículo te ayudamos a encontrar el telescopio perfecto
+                para ti respondiendo a unas sencillas preguntas.
+              </p>
+              <a href="/error404.html" class="btn btn-secondary active" aria-current="page">Leer Más</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselEntradadeblog"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselEntradadeblog"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section>
+        <h1  class="display-4 text-center text-light py-2 titulo">
+          La astronomía en Argentina: Recorrido histórico
+        </h1>
+        <article class="container my-5">
+          <div class="posicionado mx-4">
+            <iframe
+              class="parrafoiframe"
+              width="310"
+              height="315"
+              src="https://www.youtube.com/embed/noF-a0OvE-g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p class="text-center text-light">
+              La Asociación Argentina de Astronomía se funda en 1958, en ocasión
+              de un encuentro realizado en el Observatorio Félix Aguilar en la
+              provincia de San Juan, que contó con la presencia de toda la
+              comunidad astronómica del momento, entre los que figuraban
+              importantes personalidades como los doctores Livio Gratton, Carlos
+              Cesco, Jorge Landi, Carlos Jaschek, Jorge Sahade, Adela Ringuelet,
+              Luis Milone, Juan José Nissen y Bernhard Dawson. El Dr. Livio
+              Gratton, que era por ese entonces Director del Observatorio
+              Astronómico de Córdoba y que propiciaba la reunión científica en
+              San Juan, pensaba proponer la formación del Comité Nacional de
+              Astronomía de la Unión Astronómica Internacional con todos los
+              astrónomos participantes del encuentro. En vista de este hecho, el
+              Dr. Jorge Sahade redactó los posibles estatutos para una
+              Asociación de Astronomía. Finalmente, en la reunión se decidió
+              crear la Asociación Argentina de Astronomía por un lado, y formar
+              un Comité Nacional Argentino para la Unión Astronómica
+              Internacional, formado por un número reducido de representantes.
+              De acuerdo a sus estatutos, se estableció que la Asociación
+              estuviera integrada por la totalidad de los astrónomos argentinos.
+              El Dr. Gratton propuso al Dr. Bernhard Dawson como primer
+              presidente de la Asociación Argentina de Astronomía y esa
+              propuesta fue aprobada por unanimidad. Así comenzó a funcionar
+              nuestra Asociación, que cumplirá su medio siglo en poco tiempo. A
+              pesar de que la Asociación estuvo en actividad desde el año 1958,
+              la fundación de la misma no fue documentada hasta el año 1977.
+              Hasta este momento, esta había desarrollado una actividad
+              permanente, acreditada en 23 reuniones y diversas publicaciones
+              que incluían 19 volúmenes de trabajos científicos. El Acta
+              Constitutiva de la Asociación Argentina de Astronomía tuvo lugar
+              en el Instituto Argentino de Radioastronomía, Provincia de Buenos
+              Aires, a los seis días del mes de octubre de 1977. En esta se
+              estableció, de acuerdo a los antecedentes arriba mencionados, como
+              finalidad de la Asociación Argentina de Astronomía la de promover
+              el progreso de la Astronomía en el país por todos los medios que
+              estén a su alcance. Junto con la Asociación, se funda el Comité
+              Nacional de Astronomía, integrado por un pequeño grupo de
+              astrónomos, cuya finalidad es mantener relaciones con la Unión
+              Astronómica Internacional y otras organizaciones similares y
+              propiciar el intercambio de astrónomos con el extranjero. La
+              asamblea en que se constituyó la Asociación Argentina de
+              Astronomía decidió por unanimidad que la nueva institución
+              publicase un Boletín. Así, el Boletín de la Asociación Argentina
+              de Astronomía (BAAA) fue creado en el año 1958 como medio de
+              difusión nacional de las actividades de investigación astronómicas
+              del país. En el año 1996 la edición del Boletín pasó a ser
+              electrónica. Actualmente, el Boletín se publica en ambas formas
+              (electrónica e impresa), mientras que los resúmenes de los
+              trabajos publicados forman parte de la base internacional de
+              publicaciones ADS. Fuentes: -Discurso del Dr. Jorge Sahade con
+              motivo del 120º Aniversario del Observatorio astronómico de La
+              Plata. -Boletines de la Asociación Argentina de Astronomía. -Acta
+              Nº1 de la Asociación Argentina de Astronomía.
+            </p>
+          </div>
+        </article>
+        <hr class="my-5 text-light" />
+        <div class="text-center text-light my-5 container" id="cafecito">
+          <h2 class="title">
+            ¿Te gusta el contenido de mi blog? Ayudame a seguir manteniéndolo
+          </h2>
+          <a
+            href="error404.html"
+            rel="noopener"
+            target="_blank"
+            ><img
+              alt="Invitame un café en cafecito.app"
+              src="https://cdn.cafecito.app/imgs/buttons/button_1.png"
+              srcset="
+                https://cdn.cafecito.app/imgs/buttons/button_1.png       1x,
+                https://cdn.cafecito.app/imgs/buttons/button_1_2x.png    2x,
+                https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x
+              "
+          /></a>
+          <br />
+          <span style="font-style: italic; font-size: 0.8em">
+            Por el momento, sólo podés invitar cafecitos si sos de Argentina.
+          </span>
+        </div>
+        <div class="container">
+          <h3 class="bg-secondary my-5 py-3 text-light text-center">Responder</h3>
+          <div>
+            <div class="d-flex p-2 bd-highlight bg-light mx-3 py-5">
+              <div class="px-3">
+                <img src="../img/avatar-1577909_640.png" alt="icono de avatar" />
+              </div>
+              <div class="form-floating">
+                <form>
+                  <textarea
+                class="form-control"
+                id="consulta"
+                rows="6"
+                placeholder="Introduce aquí tu comentario"
+                required
+              ></textarea>
+                </form>
+                <label for="floatingTextarea"></label>
+                <form>
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label pdark">Nombre y Apellido</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Juan Perez"
+                      id="nombre"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputCorreoElectronico" class="form-label pdark"
+                      >Correo electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="juanperez@gmail.com"
+                      id="InputCorreoElectronico"
+                      aria-describedby="emailHelp"
+                      required
+                    />
+                    <div id="emailHelp" class="form-text">
+                      No compartiremos tu información con terceros.
+                    </div>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="notificaciones"
+                    />
+                    <label class="form-check-label pdark" for="notificaciones"
+                      >Deseo recibir notificaciones sobre mi comentario</label
+                    >
+                  </div>
+                  <div>
+                    <input type="checkbox" class="form-check-input" id="correos" />
+                    <label class="form-check-label pdark" for="correos"
+                      >Deseo recibir correos acerca de nuevas publicaciones</label
+                    >
+                  </div>
+                  <button
+                  type="button"
+                  class="btn btn-primary my-3"
+                  data-bs-dismiss="modal"
+                  >
+                  Aceptar
+                  </button>
+                </form>
+              </div>
+            </div>
+            <hr class="my-5" />
+            <h3 class="bg-secondary my-5 text-light text-center py-3">Respuestas anteriores</h3>
+            <div class="d-flex p-2 bd-highlight bg-light mx-3 py-5">
+              <div class="px-3">
+                <img src="../img/avatar-1577909_640.png" alt="icono de avatar" />
+              </div>
+              <div>
+                <div class="d-flex justify-content-end pdark">
+                  <i class="fas fa-thumbs-up px-2"></i>
+                  <i class="fas fa-thumbs-down px-2"></i>
+                </div>
+                <h5 class="pdark">Usuario35629</h5>
+                <div>
+                  <p class="pdark">
+                    Fantástico video. También pueden ir a ver "El camino eterno", una
+                    producción full dome del Planetario Ciudad de La Plata
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="d-flex p-2 bd-highlight bg-light mx-3 py-5">
+              <div class="px-3">
+                <img src="../img/avatar-1577909_640.png" alt="icono de avatar" />
+              </div>
+              <div>
+                <div class="d-flex justify-content-end pdark">
+                  <i class="fas fa-thumbs-up px-2"></i>
+                  <i class="fas fa-thumbs-down px-2"></i>
+                </div>
+                <h5 class="pdark">Usuario35629</h5>
+                <div>
+                  <p class="pdark">
+                    Fantástico video. También pueden ir a ver "El camino eterno", una
+                    producción full dome del Planetario Ciudad de La Plata
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="d-flex p-2 bd-highlight bg-light mx-3 py-5">
+              <div class="px-3">
+                <img src="../img/avatar-1577909_640.png" alt="icono de avatar" />
+              </div>
+              <div>
+                <div class="d-flex justify-content-end pdark">
+                  <i class="fas fa-thumbs-up px-2"></i>
+                  <i class="fas fa-thumbs-down px-2"></i>
+                </div>
+                <h5 class="pdark">Usuario35629</h5>
+                <div>
+                  <p class="pdark">
+                    Fantástico video. También pueden ir a ver "El camino eterno", una
+                    producción full dome del Planetario Ciudad de La Plata
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="d-flex p-2 bd-highlight bg-light mx-3 py-5">
+              <div class="px-3">
+                <img src="../img/avatar-1577909_640.png" alt="icono de avatar" />
+              </div>
+              <div>
+                <div class="d-flex justify-content-end pdark">
+                  <i class="fas fa-thumbs-up px-2"></i>
+                  <i class="fas fa-thumbs-down px-2"></i>
+                </div>
+                <h5 class="pdark">Usuario35629</h5>
+                <div>
+                  <p class="pdark">
+                    Fantástico video. También pueden ir a ver "El camino eterno", una
+                    producción full dome del Planetario Ciudad de La Plata
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="d-flex p-2 bd-highlight bg-light mx-3 py-5">
+              <div class="px-3">
+                <img src="../img/avatar-1577909_640.png" alt="icono de avatar" />
+              </div>
+              <div>
+                <div class="d-flex justify-content-end pdark">
+                  <i class="fas fa-thumbs-up px-2"></i>
+                  <i class="fas fa-thumbs-down px-2"></i>
+                </div>
+                <h5 class="pdark">Usuario35629</h5>
+                <div>
+                  <p class="pdark">
+                    Fantástico video. También pueden ir a ver "El camino eterno", una
+                    producción full dome del Planetario Ciudad de La Plata
+                  </p>
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary">Responder</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white pt-3 pb-3">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+  
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Logo de orbita</h5>
+            <div>
+              <img src="/img/logo2.png" alt="logo orbita" height="100px" width="100px">
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">descripcion</h5>
+            <p>Una mirada al cielo lejos de la ciudad</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactos</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> corresponde direccion de orbita
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> orbita@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +123456789
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> +123456789
+            </p>
+          </div>
+        </div>
+        <hr class="mb-3">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p> Copyright ©2021 todos los derechos reservados:
+              <a href="error404.html" id="copyright">
+                <strong class="text-warning">orbita</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white footer-fuente"><i
+                      class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

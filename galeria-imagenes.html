@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author"
+    content="Andrea Cisnero, Facundo Moya, Esteban Márquez, Facundo Elías, Luz Mariam Diaz, Emmanuel Gonzalez " />
+  <meta name="description" content="proyecto Orbita" />
+  <meta name="keywords" content="proyecto orbita,NASA,espacio,universo" />
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/logo2.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  <title>Proyecto Orbita</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active efecto-link  text-uppercase font-weight-bold text-warning">Inicio</a>
+        <a href="entrada-blog.html" class="efecto-link text-uppercase font-weight-bold text-warning">Entrada del
+          blog</a>
+        <a href="galeria-imagenes.html" class="efecto-link text-uppercase font-weight-bold text-warning">Galería
+          de imágenes</a>
+          <a href="contacto.html" class="efecto-link text-uppercase font-weight-bold text-warning">Contacto</a>
+          <a href="acerca-de-nosotros.html" class="efecto-link text-uppercase font-weight-bold text-warning">Acerca de
+            nosotros</a>
+        <div class="loginsusc">
+          <a href="login.html" class="efecto-link text-uppercase font-weight-bold text-warning">Login</a>
+        </div>
+        <div class="loginsusc">
+          <a id="myBtn" class="efecto-link">SUSCRIPCIÓN</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+          <div id="myModal" class="modal center">
+            <div class="modal-content1">
+              <div class="modal-header">
+                <h2>¡Suscribite a nuestro blog!</h2>
+                <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">X</button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre">Correo electrónico <span class="text-danger">*</span></label>
+                    <input class="form-control" id="nombre" type="email" placeholder="facuelias@gmail.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <div class="mb-3">
+                      <label class="form-label" for="nombre">Contraseña<span class="text-danger">*</span></label>
+                      <input class="form-control" id="nombre" type="password"  required>
+                    </div>
+                  </div>
+                  <div id="enviar1">
+                  <button class="btn btn-primary mt-3">Enviar</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </nav>
+  </header>
+    <main class="bg-dark">
+        <section class="container">
+            <div class="bg-secondary py-5 titulo">
+                <h1 class="text-center text-light">Observatorios en Argentina</h1>
+            </div>
+            <hr />
+            <article class="row">
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/1Amigosastronomía.jfif" class="card-img-top efectoCard"
+                            alt="observatorio asociación argentina amigos de la astronomía" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Asociación Argentina amigos de la astronomía
+                            </h5>
+                            <p class="card-text">
+                                Fundada en el año
+                                1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/2Asociación_Entrerriana_de_Astronomía.jpg" class="card-img-top"
+                            alt="asociación entrerriana de astronomía" />
+                        <div class="card-body">
+                            <h5 class="card-title">Asociación Entrerriana de astronomía</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/3Astrodomi.jpg" class="card-img-top"
+                            alt="observatorio astron+omico astrodomi" />
+                        <div class="card-body">
+                            <h5 class="card-title">Observatorio astronómico Astrodomi</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/4Observatorio-cba.jpg" class="card-img-top"
+                            alt="observatorio astronómico de córdoba" />
+                        <div class="card-body">
+                            <h5 class="card-title">Observatorio Astronómico de Córdoba</h5>
+                            <p class="card-text">
+                                Fundada en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/5FelixAguilar.jpg" class="card-img-top" alt="observatorio félix aguilar" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Observatorio Astronómico Félix Aguilar
+                            </h5>
+                            <p class="card-text">
+                                Fundado en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/6PlanetarioGalileoGalilei.jpg" class="card-img-top"
+                            alt="planetario galileo galilei" />
+                        <div class="card-body">
+                            <h5 class="card-title">Planetario Galileo Galilei</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/7observatoriodelaplata.jfif" class="card-img-top"
+                            alt="observatorio astronómico de la plata" />
+                        <div class="card-body">
+                            <h5 class="card-title">Observatorio Astronómico de La Plata</h5>
+                            <p class="card-text">
+                                Fundado en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/8el_Leoncito-San_Juan-ARG.jfif" class="card-img-top"
+                            alt="complejo astronómico el leoncito" />
+                        <div class="card-body">
+                            <h5 class="card-title">Complejo Astronómico El Leoncito</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/9llama.jpg" class="card-img-top" alt="radiotelescopio en construcción" />
+                        <div class="card-body">
+                            <h5 class="card-title">Large Latin American Milimeter Array</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/10Parque_del_Conocimiento_10.jpg" class="card-img-top"
+                            alt="observatorio astronómico de las misiones" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Observatorio Astronómico de Las Misiones
+                            </h5>
+                            <p class="card-text">
+                                Fundado en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/11Observatorio_Astronómico_de_Mercedes.jpg" class="card-img-top"
+                            alt="observatorio astronómico de las mercedes" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Observatorio Astronómico de Las Mercedes
+                            </h5>
+                            <p class="card-text">
+                                Fundado en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/12museo_de_Astronomia_UNLP.jfif" class="card-img-top"
+                            alt="museo de astronomía UNLP" />
+                        <div class="card-body">
+                            <h5 class="card-title">Museo de Astronomía UNLP</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/13monte-hermoso.jpg" class="card-img-top"
+                            alt="observatorio astronómico de monte hermoso" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Observatorio Astronómico de Monte Hermoso
+                            </h5>
+                            <p class="card-text">
+                                Fundado en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/14Observatorio-Pierre_Auger.jpg" class="card-img-top"
+                            alt="observatorio astronómico pierre auger" />
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Observatorio Astronómico Pierre Auger
+                            </h5>
+                            <p class="card-text">
+                                Fundado en el año 1929, cuyo objetivo es difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/15sanjose.jpeg" class="card-img-top" alt="observatorio san josé" />
+                        <div class="card-body">
+                            <h5 class="card-title">Observatorio Astronómico San José</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 py-2">
+                    <div class="card divcard">
+                        <img src="../img/16Antena_de_la_CONAE-CLTC_Neuquén.jpg" class="card-img-top"
+                            alt="antena de la estación del espacio lejano" />
+                        <div class="card-body">
+                            <h5 class="card-title">Red de Espacio Profundo de China</h5>
+                            <p class="card-text">
+                                Entidad de bien público sin fines de lucro, fundada en el año 1929, cuyo objetivo es
+                                difundir y cultivar la Astronomía.
+                            </p>
+                            <a href="error404.html" class="btn btn-primary">ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-dark text-white pt-3 pb-3">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+  
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Logo de orbita</h5>
+            <div>
+              <img src="/img/logo2.png" alt="logo orbita" height="100px" width="100px">
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">descripcion</h5>
+            <p>Una mirada al cielo lejos de la ciudad</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contactos</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i> corresponde direccion de orbita
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> orbita@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +123456789
+            </p>
+            <p>
+              <i class="fas fa-print mr-3"></i> +123456789
+            </p>
+          </div>
+        </div>
+        <hr class="mb-3">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p> Copyright ©2021 todos los derechos reservados:
+              <a href="error404.html" id="copyright">
+                <strong class="text-warning">orbita</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white footer-fuente"><i
+                      class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="error404.html" class="btn-floating btn-sm text-white"><i
+                      class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+<script>
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
